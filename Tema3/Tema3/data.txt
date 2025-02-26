@@ -1,0 +1,26 @@
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 25.3, "HUMID": 45}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 40.3, "HUMID": 100}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 40.3, "HUMID": 100}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 25.3, "HUMID": 45, "timestamp": "2025-01-01T12:00:00Z"}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 7, "HUMID": 90, "timestamp": "2025-01-01T12:00:00Z"}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 40.3, "HUMID": 1}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 10.3, "HUMID": 7}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 7, "HUMID": 90, "timestamp": "2025-01-01T12:00:00Z"}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 10.3, "HUMID": 7}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 30.8, "HUMID": 90}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 11.3, "HUMID": 5}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 16.7, "HUMID": 45}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 20, "HUMID": 79}'
+mosquitto_pub -h localhost -t "UPB/RPi_1" -m '{"TEMP": 1.3, "HUMID": 0}'
+
+mosquitto_pub -h localhost -t "UPB/Gas" -m '{"TEMP": 25.3, "HUMID": 45, "timestamp": "2025-01-01T12:00:00Z"}'
+mosquitto_pub -h localhost -t "UPB/Gas" -m '{"TEMP": 25.3, "HUMID": 45}'
+mosquitto_pub -h localhost -t "UPB/Gas" -m '{"TEMP": 25.3, "HUMID": 45}'
+mosquitto_pub -h localhost -t "UPB/Gas" -m '{"TEMP": 25.3, "HUMID": 45}'
+
+mosquitto_pub -h localhost -t "UPB/Mongo" -m '{"TEMP": 22.1, "HUMID": 50, "timestamp": "2025-01-01T12:00:00Z"}'
+mosquitto_pub -h localhost -t "UPB/Mongo" -m '{"TEMP": 22.1, "HUMID": 50, "timestamp": "2025-01-01T12:00:00Z"}'
+mosquitto_pub -h localhost -t "UPB/Mongo" -m '{"TEMP": 22.1, "HUMID": 50, "timestamp": "2025-01-01T12:00:00Z"}'
+mosquitto_pub -h localhost -t "UPB/Mongo" -m '{"TEMP": 22.1, "HUMID": 50}'
+
+

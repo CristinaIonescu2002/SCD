@@ -1,0 +1,32 @@
+services:
+  web:
+    build: .
+    image: my_app:latest
+    ports:
+      - "8000:5000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=your_redis_password
+      - RATE_LIMIT_WINDOW=10
+    depends_on:
+      - redis
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+
+  redis:
+    image: "redis:alpine"
+    command: ["redis-server", "--requirepass", "your_redis_password"]
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+    ports:
+      - "6379:6379"
+# services:
+#   web:
+#     build: .
+#     ports:
+#       - "8000:5000"
+#   redis:
+#     image: "redis:alpine"

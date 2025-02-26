@@ -1,2 +1,2 @@
-# SCD
+### SCD - Concurrent and distributed systems
  
